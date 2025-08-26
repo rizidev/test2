@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
+# This is a small change to trigger GitHub Actions
 @app.route("/", methods=["GET", "POST"])
 def home():
     if request.method == "POST":
